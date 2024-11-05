@@ -12,9 +12,9 @@ namespace WebCodeFirst
 
             // Add services to the container.
 
-            builder.Services.AddDbContext<MyDbContext>(options =>
-options.UseSqlServer(builder.Configuration.GetConnectionString("myconnection")));
+            builder.Services.AddDbContext<MyDbContext>(options =>options.UseSqlServer(builder.Configuration.GetConnectionString("myconnection")));
             builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
