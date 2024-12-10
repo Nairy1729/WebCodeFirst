@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using WebCodeFirst.Models;
 using WebCodeFirst.Repositories;
@@ -7,6 +8,7 @@ namespace WebCodeFirst.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")] // Enable CORS for the controller
     public class EmployeesController : ControllerBase
     {
         private readonly IEmployeeService _service;

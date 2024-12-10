@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35303.130
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCodeFirst", "WebCodeFirst\WebCodeFirst.csproj", "{4FE9283D-6311-42CB-BEE8-2FA5BAB905FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebCodeFirst", "WebCodeFirst\WebCodeFirst.csproj", "{4FE9283D-6311-42CB-BEE8-2FA5BAB905FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodeFirstTestProject", "TodeFirstTestProject\TodeFirstTestProject.csproj", "{669314D3-924D-4172-A4AE-8CAD082E8309}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4FE9283D-6311-42CB-BEE8-2FA5BAB905FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FE9283D-6311-42CB-BEE8-2FA5BAB905FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FE9283D-6311-42CB-BEE8-2FA5BAB905FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669314D3-924D-4172-A4AE-8CAD082E8309}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669314D3-924D-4172-A4AE-8CAD082E8309}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669314D3-924D-4172-A4AE-8CAD082E8309}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669314D3-924D-4172-A4AE-8CAD082E8309}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,4 @@
-﻿
+﻿using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using WebCodeFirst.Models;
@@ -8,6 +8,7 @@ namespace WebCodeFirst.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [EnableCors("AllowAll")] // Enable CORS for this controller using the "AllowAll" policy
     public class DepartmentsController : ControllerBase
     {
         private readonly IDepartmentService _service;
@@ -44,7 +45,7 @@ namespace WebCodeFirst.Controllers
             return Ok(result);
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")] // Specify that this route expects an ID in the URL
         public IActionResult Delete(int id)
         {
             string result = _service.DeleteDepartment(id);
